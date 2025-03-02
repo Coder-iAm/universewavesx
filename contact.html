@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe WavesX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/SS_Icon_RGB.svg"> 
+</head>
+<body> <div id="topbg9">
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo1.jpg" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">SPACEPLANES</a></li>
+                <li><a href="#">NATIONAL SECURITY</a></li>
+                <li><a href="#">SPACE STATIONS</a></li>
+                <li><a href="#">SPACE TECH</a></li>
+                <li><a href="#">MICROGRAVITY LABS</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">═</div>
+    </header>
+
+<!-- Side Menu Bar -->
+<div id="sideMenu">
+    <div class="close-btn">&times;</div>
+    <h3>About</h3>
+    <hr>
+    <h4>Branch Offices</h4>
+    <p>Jarman, Russia, Sought & North Africa, India (Delhi, Mumbai), New York (Elbridge), Chin (Haikou, Forbidden City), North Korea, Etc.</p>
+
+    <h4>Name of Managing Director (Universe WavesX)</h4>
+    <p>Jarman: Matteo Ben</p>
+    <p>Russia: Nikolaj</p>
+    <p>Sought Africa: Melokuhle Ade</p>
+    <p>North Africa: Dakarai Jabari</p>
+    <p>India: Shibraj N.</p>
+    <p>New York: Lucas Liam</p>
+    <p>Chin: Haoyu Bo</p>
+    <p>North Korea: Beom Seok</p>
+
+    <h3>Explore</h3>
+    <hr>
+    <a href="our-purpose.html">Our Purpose</a>
+    <a href="leaderships.html">Leadership</a>
+
+    <h3>Inquiries</h3>
+    <hr>
+    <a href="carrier.html">Careers</a>
+    <a href="customer-payloads.html">Customer Payloads</a>
+    <a href="contact.html">Contact</a>
+</div>
+<div id="tb">
+<div class="contact-section">
+    <h2>Contact</h2>
+    <p>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        P.O. Hawthorne, Plainsboro, California, USA.<br>
+        NJ 08530-0815
+    </p>
+   
+</div>
+</div>
+  
+</div>
+
+
+
+<footer class="universe-footer">
+    <div class="footer-bottom">
+      
+        <div class="footer-links">
+            <div class="footer-logo">
+                <img src="img/logo1.jpg" alt="Universe Logo">
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <p>Head Office</p>
+                <p>P.O. Hawthorne, Plainsboro, California, USA, NJ08536-0815</p>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="our-purpose.html">Our Purpose</a><br><br>
+                <a href="leaderships.html">Leadership</a>
+            </div>
+            <div class="footer-column">
+                <h3>Inquiries</h3>
+                <a href="carrier.html">Careers</a><br><br>
+                <a href="customer-payloads.html">Customer Payloads</a><br><br>
+                <a href="contact.html">Contact</a><br><br>
+                
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="copyright">All Rights Reserved © 2024 Universe WavesX Corporation</p>
+    </div>
+</footer>
+
+<script>
+   
+
+const navbar = document.querySelector("header");
+let isScrolling;
+
+window.addEventListener("scroll", () => {
+    navbar.style.background = "black"; // Change color while scrolling
+
+    clearTimeout(isScrolling); // Reset timer
+    isScrolling = setTimeout(() => {
+        navbar.style.background = "rgba(0, 0, 0, 0.138)"; // Revert color after stop
+    }, 500);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const sideMenu = document.getElementById("sideMenu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    menuIcon.addEventListener("click", function () {
+        sideMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", function () {
+        sideMenu.classList.remove("active");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!sideMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+            sideMenu.classList.remove("active");
+        }
+    });
+});
+</script>
+</body>
+</html>
