@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe WavesX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/SS_Icon_RGB.svg">
+</head>
+
+<body id="lifebody">
+    <div id="topbg15">
+        <video autoplay loop muted playsinline
+            style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <source src="img/v7.mp4" type="video/mp4">
+
+        </video>
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="img/logo1.jpg" alt="Company Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">SPACEPLANES</a></li>
+                    <li><a href="#">NATIONAL SECURITY</a></li>
+                    <li><a href="#">SPACE STATIONS</a></li>
+                    <li><a href="#">SPACE TECH</a></li>
+                    <li><a href="#">MICROGRAVITY LABS</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon">═</div>
+        </header>
+
+        <!-- Side Menu Bar -->
+        <div id="sideMenu">
+            <div class="close-btn">&times;</div>
+            <h3>About</h3>
+            <hr>
+            <h4>Branch Offices</h4>
+            <p>Jarman, Russia, Sought & North Africa, India (Delhi, Mumbai), New York (Elbridge), Chin (Haikou,
+                Forbidden City), North Korea, Etc.</p>
+
+            <h4>Name of Managing Director (Universe WavesX)</h4>
+            <p>Jarman: Matteo Ben</p>
+            <p>Russia: Nikolaj</p>
+            <p>Sought Africa: Melokuhle Ade</p>
+            <p>North Africa: Dakarai Jabari</p>
+            <p>India: Shibraj N.</p>
+            <p>New York: Lucas Liam</p>
+            <p>Chin: Haoyu Bo</p>
+            <p>North Korea: Beom Seok</p>
+
+            <h3>Explore</h3>
+            <hr>
+            <a href="our-purpose.html">Our Purpose</a>
+            <a href="leaderships.html">Leadership</a>
+
+            <h3>Inquiries</h3>
+            <hr>
+            <a href="carrier.html">Careers</a>
+            <a href="customer-payloads.html">Customer Payloads</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+
+
+        <section class="hero">
+            <div class="overlay">
+                <h1 id="headline">National Security & Defense</h1>
+
+<p>National security ensures the protection of a country's citizens, economy, and institutions from external and internal threats.  
+It involves defense strategies, cybersecurity, intelligence operations, and law enforcement to maintain stability and sovereignty.</p>
+
+            </div>
+        </section>
+    </div>
+
+  
+
+
+
+    <section class="commercial-sec">
+        <div class="content">
+            <h1>1. Cybersecurity</h1>
+            <p>Protecting critical infrastructure, government networks, and sensitive data from cyber threats, hacking, and espionage.</p>
+    
+            <h1>2. Border Security</h1>
+            <p>Monitoring and controlling the movement of people and goods across national borders to prevent illegal activities and threats.</p>
+    
+            <h1>3. Military Defense</h1>
+            <p>Maintaining armed forces, defense systems, and strategic deterrence to safeguard national sovereignty and interests.</p>
+    
+            <h1>4. Intelligence and Counterterrorism</h1>
+            <p>Gathering intelligence, preventing terrorist activities, and responding to security threats through national agencies.</p>
+    
+            <h1>5. Economic Security</h1>
+            <p>Ensuring financial stability, preventing economic espionage, and protecting key industries from foreign influence.</p>
+    
+            <h1>6. Space Security</h1>
+            <p>Protecting satellites, space assets, and communications from potential threats, including cyber and kinetic attacks.</p>
+    
+            <h1>7. Energy Security</h1>
+            <p>Securing the supply of energy resources, power grids, and fuel reserves to maintain national stability.</p>
+    
+            <h1>8. Public Health Security</h1>
+            <p>Preparing for and responding to biological threats, pandemics, and bioterrorism to protect public well-being.</p>
+    
+            <h1>9. Environmental Security</h1>
+            <p>Addressing climate change, natural disasters, and resource management to prevent conflicts and instability.</p>
+    
+            <h1>10. Transportation and Infrastructure Security</h1>
+            <p>Protecting critical transportation networks, communication systems, and public infrastructure from sabotage and attacks.</p>
+        </div>
+    </section>
+    
+
+
+
+    <footer class="universe-footer">
+        <div class="footer-bottom">
+
+            <div class="footer-links">
+                <div class="footer-logo">
+                    <img src="img/logo1.jpg" alt="Universe Logo">
+                </div>
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <p>Head Office</p>
+                    <p>P.O. Hawthorne, Plainsboro, California, USA, NJ08536-0815</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="our-purpose.html">Our Purpose</a><br><br>
+                    <a href="leaderships.html">Leadership</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Inquiries</h3>
+                    <a href="carrier.html">Careers</a><br><br>
+                    <a href="customer-payloads.html">Customer Payloads</a><br><br>
+                    <a href="contact.html">Contact</a><br><br>
+
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="copyright">All Rights Reserved © 2024 Universe WavesX Corporation</p>
+        </div>
+    </footer>
+
+    <script>
+
+
+        const navbar = document.querySelector("header");
+        let isScrolling;
+
+        window.addEventListener("scroll", () => {
+            navbar.style.background = "black"; // Change color while scrolling
+
+            clearTimeout(isScrolling); // Reset timer
+            isScrolling = setTimeout(() => {
+                navbar.style.background = "rgba(0, 0, 0, 0.138)"; // Revert color after stop
+            }, 500);
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const sideMenu = document.getElementById("sideMenu");
+            const closeBtn = document.querySelector(".close-btn");
+
+            menuIcon.addEventListener("click", function () {
+                sideMenu.classList.add("active");
+            });
+
+            closeBtn.addEventListener("click", function () {
+                sideMenu.classList.remove("active");
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener("click", function (event) {
+                if (!sideMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+                    sideMenu.classList.remove("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
